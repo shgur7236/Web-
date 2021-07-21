@@ -3,12 +3,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
 a {
    text-decoration: none;
    color: #333;
 
 }    
-
+body {
+    font-family: 'Nanum Brush Script', cursive;
+}
 li {
     list-style: none;
 }
@@ -24,7 +27,7 @@ img {
 /* header */
 header {
     height: 160px;
-    background:plum;
+    background-image:linear-gradient(pink,violet) ;
 }
 #logo {
     width: 150px;
@@ -84,7 +87,7 @@ nav {
     background: white;
     width: 200px;
     height: 100%;
-    box-shadow: -1px 0 2px gray;
+    box-shadow: -1px 0 2px rgb(80, 76, 76);
     padding-top: 80px;
     display: none;
     z-index: 1;
@@ -94,7 +97,7 @@ nav>ul>li>a {
     padding: 10px;
     font-weight: bold;
     font-size: 1.2em;
-    border-bottom: 1px solid #ccc;
+    background-position: center;
 }
 nav>ul>li>ul a{
     display: block;
@@ -105,12 +108,25 @@ nav>ul>li>ul a{
 nav>ul>li>ul {
     display: none;
 }
-
+#tab {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+}
+#tab a {
+    border-bottom: 3px solid rgba(255, 0,0,0);
+    padding: 5px 10px;
+    
+}
+#tab a.on {
+    border-bottom: 3px solid steelblue;
+}
 /****** 컨텐츠 *******/
 section{
     padding: 10px;
     background-color: hotpink;
 }
+
 #content1 {
     display: flex;
     flex-wrap: wrap;
@@ -123,7 +139,7 @@ section{
     margin-bottom: 10px;
 }
 #content2{
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     justify-content: space-around;
 }
@@ -137,11 +153,20 @@ section{
 #content2 div:nth-child(2), #content2 div:nth-child(3){
     width: 49%;
 } 
+#content3 {
+    height: 460px;
+    overflow: hidden;
+    position: relative;
+    padding: 10px;
+
+}
 #content3 img {
     position: absolute;
+    top: 0;
+    left: 0;
 }
-#content3 img:nth-child(2),#content img:nth-child(3){
-    display:none
+#content3 img:nth-child(2),#content3 img:nth-child(3){
+    display:none;
 }
 footer {
     height: 100px;
@@ -150,7 +175,32 @@ footer {
     justify-content: center;
     align-items: center;
 }
+#top_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    background-image:radial-gradient(violet,pink);
+    border-radius: 20%;
+    position: fixed;
+    right: 12px;
+    bottom: 12px;
+    z-index: 1;
 
+}
+/********* 테블릿 버전 ******/
+@media all and (min-width:768px) {
+    #logo {
+        width: 150px;
+    }
+    #content3 {
+        height: 600px;
+    }
+    
+}
 /********** pc버전 **********/
 @media all and (min-width:1024px){
     #m_btn{
@@ -166,12 +216,22 @@ footer {
         top: 20px;
         width: 400px;
         right: 30px;
+
     }
     nav>ul{
         display: flex;
         justify-content: space-between;
     }
-    #content1 div{
+    nav>ul>li>a {
+        background-image: linear-gradient(rgba(0,0,0,0) 90%,gray 10%);
+        background-repeat: no-repeat;
+        background-size: 0 100%;
+        transition: 0.3s;
+    }
+    nav>ul>li>a:hover {
+        background-size: 100% 100%;
+    }
+    #content1 div{ 
         width: 24%;
     }
     #content2 div:nth-child(1){
@@ -182,5 +242,16 @@ footer {
     }
     #content2 div:nth-child(3){
         width: 24%;
+    }
+    #content3 {
+        position: relative;
+    }
+    #content3 img {
+        width: 40%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #tab {
+        font-size: 1.5em;
     }
 }
