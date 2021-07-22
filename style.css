@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body, article, section {
+    height: 100%;
+}
+#index section:nth-child(1) {
+    background: url(../imgs/full-moon-2055469_1280.jpg) no-repeat  fixed;
+    background-size: cover;
+}
+#index section:nth-child(2) {
+    background: url(../imgs/tree-736885_1280.jpg) no-repeat fixed;
+    background-size: cover;
+}
+#index section:nth-child(3) {
+    background: url(../imgs/earth-1149733_1920.jpg) no-repeat fixed;
+    background-size: cover;
+}
+#moon section:nth-child(1){
+    background: url(../imgs/moon-2762111_1920.jpg) no-repeat fixed;
+    background-size: cover;
+}
+#moon section:nth-child(2){
+    background: url(../imgs/luna-4076018_1920.jpg) no-repeat fixed;
+    background-size: cover;
+}
+#moon section:nth-child(3){
+    background: url(../imgs/full-moon-2055469_1280.jpg) no-repeat fixed;
+    background-size: cover;
+}
+#sun section:nth-child(1){
+    background: url(../imgs/sea-205717_1920.jpg) no-repeat fixed;
+    background-size: cover;
+}
+#sun section:nth-child(2){
+    background: url(../imgs/beach-1751455_1920.jpg) no-repeat fixed;
+    background-size: cover;
+}
+#sun section:nth-child(3){
+    background: url(../imgs/tree-736885_1280.jpg) no-repeat fixed;
+    background-size: cover;
+}
+#earth section:nth-child(1){
+    background: url(../imgs/city-5772121_1920.jpg)no-repeat fixed;
+    background-size: cover;
+}
+#earth section:nth-child(2){
+    background: url(../imgs/earth-1388003_1920.jpg)no-repeat fixed;
+    background-size: cover;
+}
+#earth section:nth-child(3){
+    background: url(../imgs/earth-1149733_1920.jpg)no-repeat fixed;
+    background-size: cover;
+}
+header {
+    width: 100%;
+    background: #262626;
+    padding: 25px;
+    overflow: hidden;
+    position: fixed;
+    z-index: 1;
+}
+header>div>h1 {
+    flex: 1;
+}
+header h1, header a {
+    color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+
+}
+a {
+    text-decoration: none;
+}
+header>div {
+    width: 1200px;
+    padding: 0 50px;
+    display: block;
+}
+header>div {
+    display: flex;
+}
+nav {
+
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+    position: relative;
+    right: -200px;
+    padding-top: 15px;
+}
+div {
+    display: block;
+}
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+#ex {
+    display: block;
+    font-size: 1.3em;
+    color: purple;
+    z-index: 2;
+    
+}
+#ex p{
+    width: 300px;
+    text-align: justify;
+    position: relative;
+    top: 160px;
+    left: 260px;
+    letter-spacing: -1px;
+}
+#ex1 {
+    display: block;
+    font-size: 1.3em;
+    color: purple;
+    z-index: 2;
+    
+}
+#ex1 p{
+    width: 300px;
+    text-align: justify;
+    position: relative;
+    left: 260px;
+    letter-spacing: -1px;
+}
+#ex2 {
+    display: block;
+    font-size: 1.3em;
+    color: purple;
+    z-index: 2;
+    
+}
+#ex2 p{
+    width: 300px;
+    text-align: justify;
+    position: relative;
+    top: 160px;
+    left: 260px;
+    letter-spacing: -1px;
+    
+}
+footer {
+    height: 80px;
+    background: rgb(228, 228, 228);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    
+}
+#top_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    background-image:radial-gradient(violet,pink);
+    border-radius: 20%;
+    position: fixed;
+    right: 25px;
+    bottom: 12px;
+    z-index: 1
+
+}
+
+
