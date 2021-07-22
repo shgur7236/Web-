@@ -7,51 +7,51 @@ html, body, article, section {
     height: 100%;
 }
 #index section:nth-child(1) {
-    background: url(../imgs/full-moon-2055469_1280.jpg) no-repeat  fixed;
+    background: url(imgs/full-moon-2055469_1280.jpg) no-repeat  fixed;
     background-size: cover;
 }
 #index section:nth-child(2) {
-    background: url(../imgs/tree-736885_1280.jpg) no-repeat fixed;
+    background: url(imgs/tree-736885_1280.jpg) no-repeat fixed;
     background-size: cover;
 }
 #index section:nth-child(3) {
-    background: url(../imgs/earth-1149733_1920.jpg) no-repeat fixed;
+    background: url(imgs/earth-1149733_1920.jpg) no-repeat fixed;
     background-size: cover;
 }
 #moon section:nth-child(1){
-    background: url(../imgs/moon-2762111_1920.jpg) no-repeat fixed;
+    background: url(imgs/moon-2762111_1920.jpg) no-repeat fixed;
     background-size: cover;
 }
 #moon section:nth-child(2){
-    background: url(../imgs/luna-4076018_1920.jpg) no-repeat fixed;
+    background: url(imgs/luna-4076018_1920.jpg) no-repeat fixed;
     background-size: cover;
 }
 #moon section:nth-child(3){
-    background: url(../imgs/full-moon-2055469_1280.jpg) no-repeat fixed;
+    background: url(imgs/full-moon-2055469_1280.jpg) no-repeat fixed;
     background-size: cover;
 }
 #sun section:nth-child(1){
-    background: url(../imgs/sea-205717_1920.jpg) no-repeat fixed;
+    background: url(imgs/sea-205717_1920.jpg) no-repeat fixed;
     background-size: cover;
 }
 #sun section:nth-child(2){
-    background: url(../imgs/beach-1751455_1920.jpg) no-repeat fixed;
+    background: url(imgs/beach-1751455_1920.jpg) no-repeat fixed;
     background-size: cover;
 }
 #sun section:nth-child(3){
-    background: url(../imgs/tree-736885_1280.jpg) no-repeat fixed;
+    background: url(imgs/tree-736885_1280.jpg) no-repeat fixed;
     background-size: cover;
 }
 #earth section:nth-child(1){
-    background: url(../imgs/city-5772121_1920.jpg)no-repeat fixed;
+    background: url(imgs/city-5772121_1920.jpg)no-repeat fixed;
     background-size: cover;
 }
 #earth section:nth-child(2){
-    background: url(../imgs/earth-1388003_1920.jpg)no-repeat fixed;
+    background: url(imgs/earth-1388003_1920.jpg)no-repeat fixed;
     background-size: cover;
 }
 #earth section:nth-child(3){
-    background: url(../imgs/earth-1149733_1920.jpg)no-repeat fixed;
+    background: url(imgs/earth-1149733_1920.jpg)no-repeat fixed;
     background-size: cover;
 }
 header {
